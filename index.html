@@ -16,48 +16,100 @@
 
 <body>
     <div class="container">
-        <h1>Day:0 Hello, World!</h1>
-        <h3>My Solution</h3>
+
+        <h1 class="page-header">10 Days Of Javascript Hackerrank Solution</h1>
+
         <p>
-            'use strict'; <br>
-
-            process.stdin.resume(); <br>
-            process.stdin.setEncoding('utf-8'); <br>
-
-            let inputString = ''; <br>
-            let currentLine = 0; <br>
-
-            process.stdin.on('data', inputStdin => { <br>
-            inputString += inputStdin; <br>
-            }); <br>
-
-            process.stdin.on('end', _ => { <br>
-            inputString = inputString.trim().split('\n').map(string => { <br>
-            return string.trim(); <br>
-            }); <br>
-            <br>
-            main(); <br>
-            }); <br>
-
-            function readLine() { <br>
-            return inputString[currentLine++]; <br>
-            } <br>
-
-            /** <br>
-            * A line of code that prints "Hello, World!" on a new line is provided in the editor. <br>
-            * Write a second line of code that prints the contents of 'parameterVariable' on a new line. <br>
-            * <br>
-            * Parameter: <br>
-            * parameterVariable - A string of text. <br>
-            **/ <br>
-            function greeting(parameterVariable) { <br>
-            // This line prints 'Hello, World!' to the console: <br>
-            console.log('Hello, World!'); <br>
-
-            // Write a line of code that prints parameterVariable to stdout using console.log: <br>
-            <i class="answer"> console.log(parameterVariable); //This is all you have to do </i> <br>
-            } <br>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample0" role="button"
+                aria-expanded="false" aria-controls="collapseExample0">
+                Day:0 Hello, World!
+            </a>
         </p>
+        <div class="collapse" id="collapseExample0">
+            <div class="card card-body">
+                <h2>Day:0 Hello, World!</h2>
+                <h3>My Solution</h3>
+                <p>
+                    'use strict'; <br>
+
+                    process.stdin.resume(); <br>
+                    process.stdin.setEncoding('utf-8'); <br>
+
+                    let inputString = ''; <br>
+                    let currentLine = 0; <br>
+
+                    process.stdin.on('data', inputStdin => { <br>
+                    inputString += inputStdin; <br>
+                    }); <br>
+
+                    process.stdin.on('end', _ => { <br>
+                    inputString = inputString.trim().split('\n').map(string => { <br>
+                    return string.trim(); <br>
+                    }); <br>
+                    <br>
+                    main(); <br>
+                    }); <br>
+
+                    function readLine() { <br>
+                    return inputString[currentLine++]; <br>
+                    } <br>
+
+                    /** <br>
+                    * A line of code that prints "Hello, World!" on a new line is provided in the editor. <br>
+                    * Write a second line of code that prints the contents of 'parameterVariable' on a new line. <br>
+                    * <br>
+                    * Parameter: <br>
+                    * parameterVariable - A string of text. <br>
+                    **/ <br>
+                    function greeting(parameterVariable) { <br>
+                    // This line prints 'Hello, World!' to the console: <br>
+                    console.log('Hello, World!'); <br>
+
+                    // Write a line of code that prints parameterVariable to stdout using console.log: <br>
+                    <i class="answer"> console.log(parameterVariable); //This is all you have to do </i> <br>
+                    } <br>
+                </p>
+            </div>
+        </div>
+        <br>
+        <!--Day 0 data types-->
+
+        <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample1" role="button"
+                aria-expanded="false" aria-controls="collapseExample1">
+                Day 0: Data types
+            </a>
+        </p>
+        <div class="collapse" id="collapseExample1">
+            <div class="card card-body">
+                function performOperation(secondInteger, secondDecimal, secondString) { <br>
+                // Declare a variable named 'firstInteger' and initialize with integer value 4. <br>
+                const firstInteger = 4; <br>
+                <br>
+                // Declare a variable named 'firstDecimal' and initialize with floating-point value 4.0. <br>
+                const firstDecimal = 4.0; <br>
+                <br>
+                // Declare a variable named 'firstString' and initialize with the string "HackerRank". <br>
+                const firstString = 'HackerRank '; <br>
+                <br>
+                // Write code that uses console.log to print the sum of the 'firstInteger' and 'secondInteger' <br>
+                (converted to a Number type) on a new line. <br>
+                <br>
+                <i class="answer"> console.log(Number(firstInteger) + Number(secondInteger)); </i><br>
+                <br>
+                // Write code that uses console.log to print the sum of 'firstDecimal' and 'secondDecimal' (converted to
+                <br>
+                a Number type) on a new line. <br>
+                <i class="answer"> console.log(firstDecimal + (+secondDecimal)); </i><br>
+                <br>
+                // Write code that uses console.log to print the concatenation of 'firstString' and 'secondString' on a
+                <br>
+                new line. The variable 'firstString' must be printed first. <br>
+                <i class="answer"> console.log(firstString + secondString); </i><br>
+                }
+            </div>
+        </div>
+
     </div>
 
 

@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+.page-header {
+  margin: 0 auto;
+  padding: 40px;
+  text-decoration: underline;
+  text-align: center;
+}
 i.answer {
   color: green;
   background-color: aquamarine;
