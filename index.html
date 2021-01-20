@@ -30,37 +30,6 @@
                 <h2>Day:0 Hello, World!</h2>
                 <h3>My Solution</h3>
                 <p>
-                    'use strict'; <br>
-
-                    process.stdin.resume(); <br>
-                    process.stdin.setEncoding('utf-8'); <br>
-
-                    let inputString = ''; <br>
-                    let currentLine = 0; <br>
-
-                    process.stdin.on('data', inputStdin => { <br>
-                    inputString += inputStdin; <br>
-                    }); <br>
-
-                    process.stdin.on('end', _ => { <br>
-                    inputString = inputString.trim().split('\n').map(string => { <br>
-                    return string.trim(); <br>
-                    }); <br>
-                    <br>
-                    main(); <br>
-                    }); <br>
-
-                    function readLine() { <br>
-                    return inputString[currentLine++]; <br>
-                    } <br>
-
-                    /** <br>
-                    * A line of code that prints "Hello, World!" on a new line is provided in the editor. <br>
-                    * Write a second line of code that prints the contents of 'parameterVariable' on a new line. <br>
-                    * <br>
-                    * Parameter: <br>
-                    * parameterVariable - A string of text. <br>
-                    **/ <br>
                     function greeting(parameterVariable) { <br>
                     // This line prints 'Hello, World!' to the console: <br>
                     console.log('Hello, World!'); <br>

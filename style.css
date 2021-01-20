@@ -4,13 +4,23 @@
   box-sizing: border-box;
 }
 
+body {
+  background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0) !important;
+}
+
 .page-header {
   margin: 0 auto;
   padding: 40px;
   text-decoration: underline;
+  color: green;
   text-align: center;
 }
 i.answer {
   color: green;
   background-color: aquamarine;
+}
+
+.card-body {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+  backdrop-filter: blur(2rem) !important;
 }
