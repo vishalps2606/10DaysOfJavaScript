@@ -5,15 +5,60 @@
 }
 
 body {
-  background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0) !important;
+  background: #14ffe9 !important;
 }
 
+.navbar {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.6) !important;
+  backdrop-filter: blur(0.6rem) !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+.navbar-brand {
+  font-size: 32px;
+  color: rgb(8, 199, 8) !important;
+}
+.nav-item {
+  padding: 0 40px !important;
+  font-size: 20px;
+  color: rgb(8, 199, 8) !important;
+}
+.nav-item:hover {
+  color: green !important;
+}
+.active {
+  color: green !important;
+}
 .page-header {
-  margin: 0 auto;
-  padding: 40px;
-  text-decoration: underline;
+  margin: 120px 0px 80px 0;
+  padding: 10px;
   color: green;
   text-align: center;
+}
+.page-header::after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 60%; /* Change this to whatever width you want. */
+  padding-top: 10px; /* This creates some space between the element and the border. */
+  border-bottom: 4px solid green; /* This creates the border. Replace black with whatever color you want. */
+}
+
+div p a.btn {
+  color: #fff;
+  background: rgb(8, 199, 8) !important;
+  border: 1px solid rgb(8, 199, 8);
+  border-radius: 20px;
+  box-shadow: 5px 5px 8px rgba(0, 128, 0, 0.4);
+}
+div p a.btn:hover {
+  background: rgb(0, 128, 0) !important;
+  border: 1px solid rgb(0, 128, 0);
+  border-radius: 20px;
+  box-shadow: 5px 5px 8px rgba(0, 128, 0, 0.4);
+}
+div p a.btn:active {
+  border: 1px solid rgb(8, 199, 8);
 }
 i.answer {
   color: green;
@@ -22,5 +67,19 @@ i.answer {
 
 .card-body {
   background-color: rgba(255, 255, 255, 0.6) !important;
-  backdrop-filter: blur(2rem) !important;
+  backdrop-filter: blur(0.8rem) !important;
+}
+
+.footer {
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  color: #fff;
+  text-align: center;
+  background: #000;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: aqua;
 }

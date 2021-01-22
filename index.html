@@ -15,73 +15,225 @@
 </head>
 
 <body>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">#10DaysOfJavascript</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="index.html">Home</a>
+                    <a class="nav-item nav-link" href="#">About Me</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="page-header">10 Days Of Javascript Hackerrank Solution</h1>
+
     <div class="container">
-
-        <h1 class="page-header">10 Days Of Javascript Hackerrank Solution</h1>
-
-        <p>
-            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample0" role="button"
-                aria-expanded="false" aria-controls="collapseExample0">
-                Day:0 Hello, World!
-            </a>
-        </p>
-        <div class="collapse" id="collapseExample0">
-            <div class="card card-body">
-                <h2>Day:0 Hello, World!</h2>
-                <h3>My Solution</h3>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
                 <p>
-                    function greeting(parameterVariable) { <br>
-                    // This line prints 'Hello, World!' to the console: <br>
-                    console.log('Hello, World!'); <br>
-
-                    // Write a line of code that prints parameterVariable to stdout using console.log: <br>
-                    <i class="answer"> console.log(parameterVariable); //This is all you have to do </i> <br>
-                    } <br>
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample0" role="button"
+                        aria-expanded="false" aria-controls="collapseExample0">
+                        Day:0 Hello, World!
+                    </a>
                 </p>
+                <div class="collapse" id="collapseExample0">
+                    <div class="card card-body">
+                        <h2>Day:0 Hello, World!</h2>
+                        <h3>My Solution</h3>
+                        <p>
+                            function greeting(parameterVariable) { <br>
+                            // This line prints 'Hello, World!' to the console: <br>
+                            console.log('Hello, World!'); <br>
+
+                            // Write a line of code that prints parameterVariable to stdout using console.log: <br>
+                            <i class="answer"> console.log(parameterVariable); //This is all you have to do </i> <br>
+                            } <br>
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <!--Day 0 data types-->
+
+                <p>
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample1" role="button"
+                        aria-expanded="false" aria-controls="collapseExample1">
+                        Day 0: Data types
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample1">
+                    <div class="card card-body">
+                        function performOperation(secondInteger, secondDecimal, secondString) { <br>
+                        // Declare a variable named 'firstInteger' and initialize with integer value 4. <br>
+                        const firstInteger = 4; <br>
+                        <br>
+                        // Declare a variable named 'firstDecimal' and initialize with floating-point value 4.0. <br>
+                        const firstDecimal = 4.0; <br>
+                        <br>
+                        // Declare a variable named 'firstString' and initialize with the string "HackerRank". <br>
+                        const firstString = 'HackerRank '; <br>
+                        <br>
+                        // Write code that uses console.log to print the sum of the 'firstInteger' and 'secondInteger'
+                        <br>
+                        (converted to a Number type) on a new line. <br>
+                        <br>
+                        <i class="answer"> console.log(Number(firstInteger) + Number(secondInteger)); </i><br>
+                        <br>
+                        // Write code that uses console.log to print the sum of 'firstDecimal' and 'secondDecimal'
+                        (converted to
+                        <br>
+                        a Number type) on a new line. <br>
+                        <i class="answer"> console.log(firstDecimal + (+secondDecimal)); </i><br>
+                        <br>
+                        // Write code that uses console.log to print the concatenation of 'firstString' and
+                        'secondString' on a
+                        <br>
+                        new line. The variable 'firstString' must be printed first. <br>
+                        <i class="answer"> console.log(firstString + secondString); </i><br>
+                        }
+                    </div>
+                </div> <br>
+
+                <!--Day 1 Arithmetic Operators-->
+
+                <p>
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample2" role="button"
+                        aria-expanded="false" aria-controls="collapseExample2">
+                        Day 0: Arithmetic Operators
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample2">
+                    <div class="card card-body">
+                        /** <br>
+                        * Calculate the area of a rectangle. <br>
+                        * <br>
+                        * length: The length of the rectangle. <br>
+                        * width: The width of the rectangle. <br>
+                        * <br>
+                        * Return a number denoting the rectangle's area. <br>
+                        **/ <br>
+                        <i class="answer"> function getArea(length, width) { <br>
+                            let area; </i><br>
+                        // Write your code here <br>
+                        <i class="answer"> area = length * width; <br>
+                            return area; </i>
+                        } <br>
+                        <br>
+                        /** <br>
+                        * Calculate the perimeter of a rectangle. <br>
+                        * <br>
+                        * length: The length of the rectangle. <br>
+                        * width: The width of the rectangle. <br>
+                        * <br>
+                        * Return a number denoting the perimeter of a rectangle. <br>
+                        **/ <br>
+                        <i class="answer"> function getPerimeter(length, width) { <br>
+                            let perimeter; </i><br>
+                        // Write your code here <br>
+                        <i class="answer"> perimeter = 2*(length + width); <br>
+                            return perimeter; </i>
+                        } <br>
+                    </div>
+                </div> <br>
+
+                <!--Day 1 functions-->
+
+                <p>
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample3" role="button"
+                        aria-expanded="false" aria-controls="collapseExample3">
+                        Day 1: Functions
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample3">
+                    <div class="card card-body">
+                        /* <br>
+                        * Create the function factorial here <br>
+                        */ <br>
+                        <i class="answer"> function factorial(n){ <br>
+                            if (n == 0){ <br>
+                            return 1; <br>
+                            } <br>
+                            else{ <br>
+                            return n * factorial(n-1); <br>
+                            } <br>
+                            } </i> <br>
+                    </div>
+                </div> <br>
+
+                <!--Day 1 const and let-->
+
+                <p>
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample4" role="button"
+                        aria-expanded="false" aria-controls="collapseExample4">
+                        Day 1: let and const
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample4">
+                    <div class="card card-body">
+                        function main() { <br>
+                        // Write your code here. Read input using 'readLine()' and print output using 'console.log()'.
+                        <br>
+                        <i class="answer">let r = readLine(); <br>
+                            var Pi = Math.PI; <br>
+                            let area, perimeter; </i> <br>
+                        <br>
+                        // Print the area of the circle: <br>
+                        <i class="answer"> area = Pi*(r*r); <br>
+                            console.log(area); </i> <br>
+                        <br>
+                        // Print the perimeter of the circle: <br>
+                        <i class="answer"> perimeter = 2*Pi*r; <br>
+                            console.log(perimeter); </i><br>
+                        }
+                    </div>
+                </div> <br>
+
+                <!--Day 2 If-else-->
+
+                <p>
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample5" role="button"
+                        aria-expanded="false" aria-controls="collapseExample5">
+                        Day 2: Conditional Statements: If-else
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample5">
+                    <div class="card card-body">
+                        function getGrade(score) { <br>
+                        let grade;<br>
+                        // Write your code here<br>
+                        <i class="answer"> if(score <= 30 && score> 25) return "A";<br>
+                                else if(score <= 25 && score> 20) grade = "B";<br>
+                                    else if(score <= 20 && score> 15) return "C";<br>
+                                        else if(score <= 15 && score> 10){<br>
+                                            return "D";<br>
+                                            }<br>
+                                            else if(score > 5 && score <= 10){ grade='E' ; } else if(score <=5 && score>
+                                                <br>
+                                                = 0) return "F";<br>
+                                                else return "Invalid Number";<br>
+                                                return grade;<br>
+                                                } </i><br>
+                    </div>
+                </div>
+
+
             </div>
         </div>
-        <br>
-        <!--Day 0 data types-->
-
-        <p>
-            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample1" role="button"
-                aria-expanded="false" aria-controls="collapseExample1">
-                Day 0: Data types
-            </a>
-        </p>
-        <div class="collapse" id="collapseExample1">
-            <div class="card card-body">
-                function performOperation(secondInteger, secondDecimal, secondString) { <br>
-                // Declare a variable named 'firstInteger' and initialize with integer value 4. <br>
-                const firstInteger = 4; <br>
-                <br>
-                // Declare a variable named 'firstDecimal' and initialize with floating-point value 4.0. <br>
-                const firstDecimal = 4.0; <br>
-                <br>
-                // Declare a variable named 'firstString' and initialize with the string "HackerRank". <br>
-                const firstString = 'HackerRank '; <br>
-                <br>
-                // Write code that uses console.log to print the sum of the 'firstInteger' and 'secondInteger' <br>
-                (converted to a Number type) on a new line. <br>
-                <br>
-                <i class="answer"> console.log(Number(firstInteger) + Number(secondInteger)); </i><br>
-                <br>
-                // Write code that uses console.log to print the sum of 'firstDecimal' and 'secondDecimal' (converted to
-                <br>
-                a Number type) on a new line. <br>
-                <i class="answer"> console.log(firstDecimal + (+secondDecimal)); </i><br>
-                <br>
-                // Write code that uses console.log to print the concatenation of 'firstString' and 'secondString' on a
-                <br>
-                new line. The variable 'firstString' must be printed first. <br>
-                <i class="answer"> console.log(firstString + secondString); </i><br>
-                }
-            </div>
-        </div>
-
     </div>
 
-
+    <footer class="footer">
+        <p>&#128073;Disclaimer: These solutions are an approach of mine towards the problem, All your solutions are
+            heartly welcome. <br> &copy;Anyone can use it for educational purpose only.</p>
+        <p>&#10084; It's an open-source, and created by <a class="footer-link"
+                href="https://github.com/vishalps2606">Vishal Pandey</a> to
+            help fellow learners &#10084;</p>
+    </footer>
 
     <!--Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
