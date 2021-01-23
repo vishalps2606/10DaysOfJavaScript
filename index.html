@@ -220,11 +220,107 @@
                                                 return grade;<br>
                                                 } </i><br>
                     </div>
-                </div>
+                </div><br>
 
+                <!--Day 2 Switch statement-->
 
+                <p>
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample6" role="button"
+                        aria-expanded="false" aria-controls="collapseExample6">
+                        Day 2: Conditional Statements: Switch
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample6">
+                    <div class="card card-body">
+                        function getLetter(s) { <br>
+                        let letter; <br>
+                        // Write your code here <br>
+                        <i class="answer"> switch(true){ <br>
+                            case 'aeiou'.includes(s[0]) : <br>
+                            return "A"; <br>
+                            break; <br>
+                            case 'bcdfg'.includes(s[0]) : <br>
+                            return "B"; <br>
+                            break; <br>
+                            case 'hjklm'.includes(s[0]) : <br>
+                            return "C"; <br>
+                            break; <br>
+                            case 'npqrstvwxyz'.includes(s[0]) : <br>
+                            return "D"; <br>
+                            break; <br>
+                            default: <br>
+                            return "Invalid string"; <br>
+                            break; <br>
+                            }</i>
+                        return letter; <br>
+                        }
+                        <h3 class="or">OR</h3>
+                        function getLetter(s) { <br>
+                        let letter; <br>
+                        // Write your code here <br>
+                        <i class="answer"> switch(s[0].toLowerCase()){ <br>
+                            case 'a': <br>
+                            case 'e': <br>
+                            case 'i': <br>
+                            case 'o': <br>
+                            case 'u': <br>
+                            return "A"; <br>
+                            break; <br>
+                            case 'b': <br>
+                            case 'c': <br>
+                            case 'd': <br>
+                            case 'f': <br>
+                            case 'g': <br>
+                            return "B"; <br>
+                            break; <br>
+                            case 'h': <br>
+                            case 'j': <br>
+                            case 'k': <br>
+                            case 'l': <br>
+                            case 'm': <br>
+                            return "C"; <br>
+                            break; <br>
+                            default: <br>
+                            return "D"; <br>
+                            break;<br>
+                            }</i>
+                        return letter;<br>
+                        }
+                    </div>
+                </div><br>
+
+                <!--Day 2 loops-->
+
+                <p>
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample7" role="button"
+                        aria-expanded="false" aria-controls="collapseExample7">
+                        Day 2: loops
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample7">
+                    <div class="card card-body">
+                        /* <br>
+                        * Complete the vowelsAndConsonants function. <br>
+                        * Print your output using 'console.log()'. <br>
+                        */ <br>
+                        function vowelsAndConsonants(s) { <br>
+                        <i class="answer"> const vowel = 'aeiou'; <br>
+                            var consonant = ''; <br>
+                            <br>
+                            for(var i=0; i < s.length; i++){ <br>
+                                if(vowel.includes(s[i])){ <br>
+                                console.log(s[i]); <br>
+                                }
+                                else consonant += s[i] + '\n'; <br>
+                                }
+                                console.log(consonant.trim()); <br>
+                                } </i>
+                    </div>
+                </div><br>
             </div>
+
         </div>
+    </div>
     </div>
 
     <footer class="footer">

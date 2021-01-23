@@ -64,7 +64,12 @@ i.answer {
   color: green;
   background-color: aquamarine;
 }
-
+.or {
+  font-size: 22px;
+  color: green;
+  text-align: center;
+  font-style: italic;
+}
 .card-body {
   background-color: rgba(255, 255, 255, 0.6) !important;
   backdrop-filter: blur(0.8rem) !important;
