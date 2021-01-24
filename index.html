@@ -317,6 +317,41 @@
                                 } </i>
                     </div>
                 </div><br>
+
+                <!--Day 3 Arrays-->
+
+                <p>
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample8" role="button"
+                        aria-expanded="false" aria-controls="collapseExample8">
+                        Day 3: Arrays
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample8">
+                    <div class="card card-body">
+                        /**
+                        * Return the second largest number in the array.
+                        * @param {Number[]} nums - An array of numbers.
+                        * @return {Number} The second largest number in the array.
+                        **/
+                        function getSecondLargest(nums) {<br>
+                        // Complete the function<br>
+                        <i class="answer"> let largest = nums[0];<br>
+                            let second_largest = 0;<br>
+
+                            for(const i of nums){<br>
+                            if(largest < i){<br>
+                                largest = i;<br>
+                                }
+                                }
+                                for(const i of nums){<br>
+                                if(second_largest < i && i < largest){<br>
+                                    second_largest = i;<br>
+                                    }
+                                    }
+                                    return second_largest; </i><br>
+                        }
+                    </div>
+                </div><br>
             </div>
 
         </div>
