@@ -352,6 +352,52 @@
                         }
                     </div>
                 </div><br>
+
+                <!--Day 3 Try catch and finally-->
+
+                <p>
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample9" role="button"
+                        aria-expanded="false" aria-controls="collapseExample9">
+                        Day 3: try,catch and finally
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample9">
+                    <div class="card card-body">
+                        /* <br>
+                        * Complete the reverseString function <br>
+                        * Use console.log() to print to stdout. <br>
+                        */ <br>
+                        function reverseString(s) { <br>
+                        <i class="answer"> try{ <br>
+                            let rev_string = s.split(''); <br>
+                            rev_string.reverse(); <br>
+                            s = rev_string.join(''); <br>
+                            console.log(s); <br>
+                            }
+                            catch(e){ <br>
+                            console.log(e.message); <br>
+                            console.log(s); <br>
+                            } </i>
+                        }
+
+                        <h3 class="or">OR</h3>
+
+                        function reverseString(s) { <br>
+                        <i class="answer"> try{ <br>
+                            let rev_string = s.split(''); <br>
+                            rev_string.reverse(); <br>
+                            s = rev_string.join(''); <br>
+                            } <br>
+                            catch(e){ <br>
+                            console.log(e.message); <br>
+                            } <br>
+                            finally{ <br>
+                            console.log(s); <br>
+                            } </i>
+                        }
+                    </div>
+                </div><br>
+
             </div>
 
         </div>
