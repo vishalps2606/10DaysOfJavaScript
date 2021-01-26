@@ -398,6 +398,60 @@
                     </div>
                 </div><br>
 
+                <!--Day 3 Throw-->
+
+                <p>
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample10" role="button"
+                        aria-expanded="false" aria-controls="collapseExample10">
+                        Day 3: Throw
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample10">
+                    <div class="card card-body">
+                        function isPositive(a) { <br>
+                        <i class="answer"> if(a > 0){ <br>
+                            return "YES"; <br>
+                            } <br>
+                            else if(a === 0){ <br>
+                            throw Error("Zero Error"); <br>
+                            }else throw Error ("Negative Error"); </i>
+                        }
+
+                        <h3 class="or">OR</h3>
+
+                        function isPositive(a) { <br>
+                        <i class="answer"> if(a > 0){ <br>
+                            return "YES"; <br>
+                            }
+                            else{ <br>
+                            throw Error(a ? "Negative Error" : "Zero Error"); <br>
+                            }</i>
+                        }
+                    </div>
+                </div><br>
+
+                <!--Day 4 Create a Rectangle Object-->
+
+                <p>
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample11" role="button"
+                        aria-expanded="false" aria-controls="collapseExample11">
+                        Day 4: Create a Rectangle Object
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample11">
+                    <div class="card card-body">
+                        /* <br>
+                        * Complete the Rectangle function <br>
+                        */ <br>
+                        function Rectangle(a, b) { <br>
+                        <i class="answer"> this.length = a; <br>
+                            this.width = b; <br>
+                            this.perimeter = 2*(a + b); <br>
+                            this.area = (a * b); </i>
+                        }
+                    </div>
+                </div><br>
+
             </div>
 
         </div>
