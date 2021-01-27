@@ -452,6 +452,98 @@
                     </div>
                 </div><br>
 
+                <!--Day 4 Count Objects-->
+
+                <p>
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample12" role="button"
+                        aria-expanded="false" aria-controls="collapseExample12">
+                        Day 4: Count Objects
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample12">
+                    <div class="card card-body">
+                        /* <br>
+                        * Return a count of the total number of objects 'o' satisfying o.x == o.y. <br>
+                        * <br>
+                        * Parameter(s): <br>
+                        * objects: an array of objects with integer properties 'x' and 'y' <br>
+                        */ <br>
+                        function getCount(objects) { <br>
+                        <i class="answer"> let count = 0; <br>
+                            for(let i = 0; i < objects.length; i++){ <br>
+                                if(objects[i].x==objects[i].y){ <br>
+                                count++; <br>
+                                } <br>
+                                } <br>
+                                return count; </i>
+                        }
+                    </div>
+                </div><br>
+
+                <!--Day 4 Classes-->
+
+                <p>
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample13" role="button"
+                        aria-expanded="false" aria-controls="collapseExample13">
+                        Day 4: Classes
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample13">
+                    <div class="card card-body">
+                        /*
+                        * Implement a Polygon class with the following properties: <br>
+                        * 1. A constructor that takes an array of integer side lengths. <br>
+                        * 2. A 'perimeter' method that returns the sum of the Polygon's side lengths. <br>
+                        */ <br>
+                        <i class="answer"> class Polygon{ <br>
+                            constructor(sides){ <br>
+                            this.sides = sides; <br>
+                            } <br>
+                            perimeter(){ <br>
+                            let polygon_parameter = 0; // perimeter is sum of all sides. <br>
+                            <br>
+                            for(let i = 0; i < this.sides.length; i++){ <br>
+                                polygon_parameter += this.sides[i]; <br>
+                                } <br>
+                                return polygon_parameter; <br>
+                                } <br>
+                                }</i>
+                    </div>
+                </div><br>
+
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+
+                <!--Day5: Inheritance-->
+
+                <p>
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample14" role="button"
+                        aria-expanded="false" aria-controls="collapseExample14">
+                        Day 5: Inheritance
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample14">
+                    <div class="card card-body">
+                        /*
+                        * Implement a Polygon class with the following properties: <br>
+                        * 1. A constructor that takes an array of integer side lengths. <br>
+                        * 2. A 'perimeter' method that returns the sum of the Polygon's side lengths. <br>
+                        */ <br>
+                        <i class="answer"> class Polygon{ <br>
+                            constructor(sides){ <br>
+                            this.sides = sides; <br>
+                            } <br>
+                            perimeter(){ <br>
+                            let polygon_parameter = 0; // perimeter is sum of all sides. <br>
+                            <br>
+                            for(let i = 0; i < this.sides.length; i++){ <br>
+                                polygon_parameter += this.sides[i]; <br>
+                                } <br>
+                                return polygon_parameter; <br>
+                                } <br>
+                                }</i>
+                    </div>
+                </div><br>
             </div>
 
         </div>
