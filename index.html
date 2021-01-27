@@ -19,7 +19,7 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="index.html">#10DaysOfJavascript</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -524,24 +524,20 @@
                 </p>
                 <div class="collapse" id="collapseExample14">
                     <div class="card card-body">
-                        /*
-                        * Implement a Polygon class with the following properties: <br>
-                        * 1. A constructor that takes an array of integer side lengths. <br>
-                        * 2. A 'perimeter' method that returns the sum of the Polygon's side lengths. <br>
+                        /* <br>
+                        * Write code that adds an 'area' method to the Rectangle class' prototype <br>
                         */ <br>
-                        <i class="answer"> class Polygon{ <br>
-                            constructor(sides){ <br>
-                            this.sides = sides; <br>
+                        <i class="answer"> Rectangle.prototype.area = function(){ <br>
+                            return (this.w * this.h); <br>
+                            } </i>
+                        /* <br>
+                        * Create a Square class that inherits from Rectangle and implement its class constructor <br>
+                        */ <br>
+                        <i class="answer"> class Square extends Rectangle{ <br>
+                            constructor(side){ <br>
+                            super(side,side); <br>
                             } <br>
-                            perimeter(){ <br>
-                            let polygon_parameter = 0; // perimeter is sum of all sides. <br>
-                            <br>
-                            for(let i = 0; i < this.sides.length; i++){ <br>
-                                polygon_parameter += this.sides[i]; <br>
-                                } <br>
-                                return polygon_parameter; <br>
-                                } <br>
-                                }</i>
+                            }</i>
                     </div>
                 </div><br>
             </div>
@@ -562,6 +558,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
