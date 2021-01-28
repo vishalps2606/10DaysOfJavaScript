@@ -19,7 +19,7 @@ body {
   color: rgb(8, 199, 8) !important;
 }
 .nav-item {
-  padding: 0 40px !important;
+  padding: 10px 40px !important;
   font-size: 20px;
   color: rgb(8, 199, 8) !important;
 }
@@ -74,6 +74,40 @@ i.answer {
   background-color: rgba(255, 255, 255, 0.6) !important;
   backdrop-filter: blur(0.8rem) !important;
 }
+
+/* ======================= About Me ========================= */
+.about-row {
+  margin: 120px 10px;
+}
+.page-header-about {
+  margin: 20px 0px 80px 0;
+  padding: 10px;
+  color: green;
+  text-align: center;
+}
+.page-header-about::after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 32%; /* Change this to whatever width you want. */
+  padding-top: 10px; /* This creates some space between the element and the border. */
+  border-bottom: 4px solid green; /* This creates the border. Replace black with whatever color you want. */
+}
+
+.profile-img {
+  width: 90%;
+  height: auto;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.description {
+  margin: auto 0;
+}
+
+/*===================== FOOTER =========================*/
 
 .footer {
   margin-top: 20px;
