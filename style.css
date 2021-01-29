@@ -111,6 +111,21 @@ i.answer {
   padding: 0px 10px 5px 10px;
   font-size: 1.5rem;
 }
+.fa-github {
+  color: #333;
+}
+.fa-twitter {
+  color: #00acee;
+}
+.fa-linkedin {
+  color: #0e76a8;
+}
+.fa-instagram {
+  color: #bc2a8d;
+}
+.fa-youtube {
+  color: #ff0000;
+}
 .greet {
   color: #f69669;
   font-size: 1.6rem;
