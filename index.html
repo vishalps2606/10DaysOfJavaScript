@@ -616,6 +616,33 @@
                     </div>
                 </div><br>
 
+                <!--Day6: BitWise Operators-->
+
+                <p>
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample17" role="button"
+                        aria-expanded="false" aria-controls="collapseExample17">
+                        Day 6: BitWise Operators
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample17">
+                    <div class="card card-body">
+                        <i class="answer"> function getMaxLessThanK(n, k) { <br>
+                            let max_AandB = 0; <br>
+                            for (let b = n; b > 0; b--) { <br>
+                            for (let a = b-1; a > 0; a--) { <br>
+                            if ((a & b) < k && (a & b)> max_AandB){ <br>
+                                max_AandB = (a&b); <br>
+                                }<br>
+                                }<br>
+                                } <br>
+                                return max_AandB; <br>
+                                } </i>
+                        <br>
+                        <i>*Note: In this question, I take help from discussion tab, because i am not able to understand
+                            the question language.</i>
+                    </div>
+                </div><br>
+
             </div>
 
         </div>
