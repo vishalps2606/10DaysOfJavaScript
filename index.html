@@ -50,9 +50,10 @@
                         <p>
                             function greeting(parameterVariable) { <br>
                             // This line prints 'Hello, World!' to the console: <br>
-                            console.log('Hello, World!'); <br>
+                            //console.log('Hello, World!'); <br>
 
-                            // Write a line of code that prints parameterVariable to stdout using console.log: <br>
+                            // Write a line of code that prints parameterVariable to<br> //stdout using console.log:
+                            <br><br>
                             <i class="answer"> console.log(parameterVariable); //This is all you have to do </i> <br>
                             } <br>
                         </p>
@@ -540,6 +541,81 @@
                             }</i>
                     </div>
                 </div><br>
+
+                <!--Day5: Template Literals-->
+
+                <p>
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample15" role="button"
+                        aria-expanded="false" aria-controls="collapseExample15">
+                        Day 5: Template Literals
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample15">
+                    <div class="card card-body">
+                        /* <br>
+                        * Determine the original side lengths and return an array: <br>
+                        * - The first element is the length of the shorter side <br>
+                        * - The second element is the length of the longer side <br>
+                        * <br>
+                        * Parameter(s): <br>
+                        * literals: The tagged template literal's array of strings. <br>
+                        * expressions: The tagged template literal's array of expression values (i.e., [area,
+                        perimeter]). <br>
+                        */ <br>
+                        <i class="answer">function sides(literals, ...expressions) { <br>
+                            const [a, p] = expressions; <br>
+                            const root = Math.sqrt((p*p)-(16*a)) //formula <br>
+                            const s1 = (p + root)/4; <br>
+                            const s2 = (p - root)/4; <br>
+                            return ([s2, s1]).sort();</i> <br>
+                        }
+
+                    </div>
+                </div><br>
+
+                <!--Day5: Arrow Functions-->
+
+                <p>
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample16" role="button"
+                        aria-expanded="false" aria-controls="collapseExample16">
+                        Day 5: Arrow Functions
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample16">
+                    <div class="card card-body">
+                        /* <br>
+                        * Modify and return the array so that all even elements are doubled and all odd elements are
+                        tripled. <br>
+                        * <br>
+                        * Parameter(s): <br>
+                        * nums: An array of numbers. <br>
+                        */ <br>
+
+                        <h3 class="or">Simple and Basic Approach</h3>
+                        function modifyArray(nums) { <br>
+                        <i class="answer"> let newArray = []; <br>
+                            <br>
+                            for(let i of nums){ <br>
+                            if(i%2 == 0) newArray.push(i*2); <br>
+                            else newArray.push(i*3); <br>
+                            } <br>
+                            return newArray;</i>
+                        }
+                        <h3 class="or">Using Arrow function</h3>
+                        function modifyArray(nums) { <br>
+                        <i class="answer">var newArray = nums.map(i => { <br>
+                            if(i%2==0) return i*2; <br>
+                            else return i*3; <br>
+                            }); <br>
+                            return newArray; </i>
+                        }
+                        <h3 class="or">One-liner Using Arrow function</h3>
+                        function modifyArray(nums) { <br>
+                        <i class="answer">return nums.map(i => i = (i%2==0) ? i*2 : i*3); </i>
+                        }
+                    </div>
+                </div><br>
+
             </div>
 
         </div>
