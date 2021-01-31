@@ -108,8 +108,18 @@ i.answer {
   padding-top: 40px;
 }
 .fa {
-  padding: 0px 10px 5px 10px;
+  padding: 5px 10px;
+  margin: 5px;
   font-size: 1.5rem;
+  border: 1px solid rgba(0, 128, 0, 0.4);
+  background-color: rgba(8, 199, 8, 0.4);
+  box-shadow: 5px 2px 5px rgba(0, 128, 0, 0.4);
+  border-radius: 50%;
+  transition: 0.4s ease-in-out;
+}
+.fa:hover {
+  background-color: rgba(0, 128, 0, 0.6);
+  box-shadow: none;
 }
 .fa-github {
   color: #333;
@@ -133,6 +143,11 @@ i.answer {
 .name {
   color: rgb(8, 199, 8);
   font-size: 2rem;
+  text-shadow: 3px 2px 5px rgba(8, 199, 8, 0.6);
+  transition: 0.3s ease-in-out;
+}
+.name:hover {
+  text-shadow: none;
 }
 .intro {
   color: rgb(68, 63, 63);
