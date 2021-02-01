@@ -643,6 +643,66 @@
                     </div>
                 </div><br>
 
+                <!--Day6: JavaScript Dates-->
+
+                <p>
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample18" role="button"
+                        aria-expanded="false" aria-controls="collapseExample18">
+                        Day 6: JavaScript Dates
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample18">
+                    <div class="card card-body">
+                        // The days of the week are: "Sunday", "Monday", "Tuesday",<br> //"Wednesday", "Thursday",
+                        "Friday", "Saturday" <br><br>
+
+                        <h3 class="or">Simple and Basic Approach</h3>
+                        function getDayName(dateString) { <br>
+                        let dayName; <br>
+                        // Write your code here <br>
+                        <i class="answer"> dayName = new Date(dateString).toString().slice(0, 3); <br>
+                            switch (dayName) { <br>
+                            case 'Sun': <br>
+                            dayName = 'Sunday'; <br>
+                            break; <br>
+                            case 'Mon': <br>
+                            dayName = 'Monday'; <br>
+                            break; <br>
+                            case 'Tue': <br>
+                            dayName = 'Tuesday'; <br>
+                            break; <br>
+                            case 'Wed': <br>
+                            dayName = 'Wednesday'; <br>
+                            break; <br>
+                            case 'Thu': <br>
+                            dayName = 'Thursday'; <br>
+                            break; <br>
+                            case 'Fri': <br>
+                            dayName = 'Friday'; <br>
+                            break; <br>
+                            case 'Sat': <br>
+                            dayName = 'Saturday'; <br>
+                            break; <br>
+                            } </i>
+                        return dayName; <br>
+                        }
+
+                        <h3 class="or">Another approach</h3>
+                        <i class="answer">function getDayName(dateString) { <br>
+                            const date = new Date(dateString); <br>
+                            <br>
+                            const options = { <br>
+                            weekday: 'long' <br>
+                            }; <br>
+                            <br>
+                            return new Intl.DateTimeFormat('en-Us', options).format(date);</i>
+                        }
+                        <i>*Note: Another approach is the approach of a person named "@tugay_yaldiz", I found it from
+                            Discussion tab and very helpful.</i>
+                        <br>
+                    </div>
+                </div><br>
+
             </div>
 
         </div>
