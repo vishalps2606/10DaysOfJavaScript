@@ -8,6 +8,7 @@ This repository is all about the Hackerrank solution of the JavaScript tutorial 
 
 <img src="Screenshot hero.jpg">
 <img src="Screenshot soln.jpg">
+
 ### What's inside the repository-
 
 - Day 0: Hello World
