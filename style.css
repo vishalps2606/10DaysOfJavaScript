@@ -61,21 +61,17 @@ body {
 .clock .hour,
 .min,
 .sec {
-  margin-top: 3.8rem;
+  margin-top: 3.6rem;
   margin-left: 2.5rem;
   position: absolute;
 }
 .clock .hour,
 .hr {
-  margin-top: 1.85rem;
-  margin-left: 1rem;
   width: 7.5rem;
   height: 7.5rem;
 }
 .clock .min,
 .mn {
-  margin-top: 1.6rem;
-  margin-left: 1.4rem;
   width: 7.5rem;
   height: 7.5rem;
 }
@@ -95,7 +91,7 @@ body {
 .hr::before {
   content: "";
   position: absolute;
-  width: 8px;
+  width: 6px;
   height: 80px;
   background: rgb(0, 128, 0);
   z-index: 10;
@@ -114,7 +110,7 @@ body {
   content: "";
   position: absolute;
   width: 2px;
-  height: 120px;
+  height: 100px;
   background: #fff;
   z-index: 12;
   border-radius: 6px 6px 0 0;
